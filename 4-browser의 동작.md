@@ -23,7 +23,7 @@
     - Safari WebKit
     - Chrome & Opera Webkit
     
-![주요 흐름](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork /flow.png)
+![주요 흐름](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png)
 
 ### 주요흐름
 
@@ -36,3 +36,31 @@
 
 
 ## parsing
+- 문서를 parsing 한다는 것은 코드가 사용할 수 있는 구조로 번역하는 것을 의미
+
+![parsing](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)
+
+## HTML 구성요소
+```html
+<html> 
+ <body> 
+  <p>안녕하세요</ p> 
+  <div> <img src = "example.png" /> 
+  </div>
+ </body>
+</html>
+```
+- mark up 의 DOM 트리구조
+![DOM](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image015.png)
+
+## CSS parsing
+-css parsing 구조
+-`p.div`,`error` : selector
+- `margin.top:3px;`: ,declaration , element 간 간격
+
+## render tree
+![tree](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image025.png)
+
+
+![css](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image023.png)
+ 
